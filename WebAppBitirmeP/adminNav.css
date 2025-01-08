@@ -1,0 +1,56 @@
+﻿body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Stil */
+.navbar {
+    margin-bottom: 0;
+    background-color: #343a40; /* Koyu gri */
+    border: none;
+    z-index: 1000; /* Sidebar'ın altında kalmaması için */
+}
+
+    .navbar .navbar-brand,
+    .navbar .navbar-nav > li > a {
+        color: #f8f9fa !important; /* Beyaz */
+    }
+
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-nav > li > a:hover {
+            color: #adb5bd !important; /* Açık gri */
+        }
+
+/* Sidebar Stil */
+.sidebar {
+    position: fixed;
+    top: 50px; /* Navbar yüksekliği kadar boşluk */
+    left: 0;
+    height: calc(100% - 50px); /* Navbar yüksekliğini çıkart */
+    width: 250px;
+    background-color: #343a40; /* Koyu gri */
+    overflow-x: hidden;
+    padding-top: 20px;
+    z-index: 999; /* Navbar ile çakışmayı önlemek için */
+}
+
+    .sidebar a {
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #f8f9fa; /* Beyaz */
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+        .sidebar a:hover {
+            background-color: #495057; /* Daha açık gri */
+            color: #ffffff;
+        }
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    margin-top: 60px; /* Navbar'ın üstünden başlaması için */
+    padding: 20px;
+}

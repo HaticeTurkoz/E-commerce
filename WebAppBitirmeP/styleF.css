@@ -1,0 +1,12 @@
+.customize-img {
+    width: 100vw; /* Görünüm genişliği */
+    height: auto; /* Yüksekliği otomatik ayarla */
+    /* Kenar yuvarlama   border-radius: 10px;*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Gölge efekti */
+    display: block; /* Ortalamak için */
+    margin-bottom: 0; /* Navbar altındaki boşluğu kaldırır */
+}
+body, nav, img {
+    margin: 0;
+    padding: 0;
+}
